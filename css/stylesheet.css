@@ -1,3 +1,8 @@
+body {
+    color: #256993;
+    background-color: #F3E9DE;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -39,4 +44,29 @@ footer {
     bottom: 0;
     text-align: center;
     left: 50%;
+}
+
+.sidebar {
+    background-color: #FAF4EC;
+}
+
+.greenbuttons {
+    background-color: #375F68;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.violetbutton {
+    background-color: #56536A;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.redbutton {
+    background-color: #9B332C;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
 }
