@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <aside>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <main>
+      <div>
         <h1>My Notes</h1>
         <ul>
-            <li>note one</li>
-            <li>note two</li>
+          <li class="mynoteslist">note one</li>
+          <li class="mynoteslist">note two</li>
         </ul>
-    </aside>
-    <main>
+      </div>
+      <div>
         <h1>Take Better Notes</h1>
         <div>
-            <ul>
-                <li>About</li>
-                <li>Docs</li>
-            </ul>
+          <ul class="rightalign">
+            <li>About</li>
+            <li>Docs</li>
+          </ul>
         </div>
         <div>
-            <ul>
-                <li><button>New Note</button></li>
-                <li><button>Dark Theme</button></li>
-            </ul>
+          <ul class="newnote">
+            <li><button>New Note</button></li>
+            <li><button>Dark Theme</button></li>
+          </ul>
         </div>
+        <textarea name="textarea" rows="7" cols="121">
+                This is a placeholder
+            </textarea
+        >
         <div>
-            <p>This is a placeholder</p>
-        </div>
-        <div>
-            <ul>
-                <li><button>Save</button></li>
-                <li><button>Cancel</button></li>
-            </ul>
+          <ul  class="rightalign">
+            <li><button>Save</button></li>
+            <li><button>Cancel</button></li>
+          </ul>
         </div>
         <footer>
-            <p>Keep in Touch</p>
+          <p>Keep in Touch</p>
+          <img
+          src="images/linkedin_circle_color-512.webp"
+          alt="Linkedin Circle logo"
+          width="50"
+          height="50"
+        />
+        <img
+        src="images/Internet_Line-02-512.webp"
+        alt="Internet Line logo"
+        width="50"
+        height="50"
+      />
         </footer>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
