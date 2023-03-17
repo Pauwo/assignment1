@@ -4,12 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 10px;
-}
-
 .mynoteslist {
     list-style-type: square;
     display: list-item;
@@ -36,15 +30,19 @@ h1 {
     padding-left: 0px;
 }
 
-textarea {
-    max-width: 100%;
+.textcontainer {
+    display: flex;
+    max-width: 1000px;
+}
+
+.textplace {
+    width: 97%;
+    border: blue 2px solid;
+    padding: 10px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     text-align: center;
-    left: 50%;
 }
 
 .sidebar {
@@ -74,4 +72,17 @@ footer {
 
 .changefontsize {
     font-size: x-large;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 10px;
+        grid-row-end: span 2;
+    }
+    body {
+        margin-top: 0;
+        margin-left: 0;
+    }
 }
