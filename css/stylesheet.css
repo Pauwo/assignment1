@@ -1,6 +1,7 @@
 body {
     color: #256993;
     background-color: #F3E9DE;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -69,4 +70,8 @@ footer {
     color: white;
     padding: 10px;
     border-radius: 8px;
+}
+
+.changefontsize {
+    font-size: x-large;
 }
