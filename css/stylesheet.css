@@ -79,14 +79,13 @@ footer {
         display: grid;
         grid-template-columns: 1fr 4fr;
         gap: 10px;
+        height: 100%;
     }
     body {
         margin-top: 0;
         margin-left: 0;
         margin-bottom: 0;
-    }
-    .sidebar {
-        padding-bottom: 77vh;
+        height: 100vh;
     }
     footer {
         text-align: center;
