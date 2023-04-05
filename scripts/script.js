@@ -26,3 +26,5 @@ newnotebtn.addEventListener("click", function() {
     cancelsave.style.display = "initial";
     textArea.value = "";
 })
+
+const notesArray = [{title:"note one", body:"this is my first note"}]
