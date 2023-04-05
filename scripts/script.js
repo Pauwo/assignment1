@@ -1,6 +1,5 @@
 const themeButton = document.querySelector(".violetbutton")
 const sidebarColor = document.querySelector(".sidebar")
-
 function clickHandler() {
     themeButton.classList.toggle("darkButton")
     sidebarColor.classList.toggle("changeSidebarTheme")
@@ -11,5 +10,12 @@ function clickHandler() {
         themeButton.textContent = "Dark Theme"
     }
 }
+themeButton.addEventListener("click", clickHandler);
 
-document.body.addEventListener("click", clickHandler);
+const textArea = document.querySelector("textarea")
+const cancelsave = document.querySelector(".cancelsave")
+const cancelButton = document.querySelector(".redbutton")
+cancelButton.addEventListener("click", function() {
+    textArea.style.display = "none";
+    cancelsave.style.display = "none";
+})
