@@ -28,3 +28,17 @@ newnotebtn.addEventListener("click", function() {
 })
 
 const notesArray = [{title:"note one", body:"this is my first note"}]
+
+const saveButton = document.querySelector(".saveButton")
+const sidebarLists = document.querySelector(".sidebarLists")
+saveButton.addEventListener("click", function() {
+    const user_title = prompt("What's the title of the note?")
+    const text_area_note = textArea.value
+    notesArray.push({title: user_title, body: text_area_note})
+    const newli = document.createElement('li')
+    const textNode = document.createTextNode(user_title);
+    newli.appendChild(textNode);
+    newli.classList.add("mynoteslist")
+    sidebarLists.appendChild(newli);
+})
+
