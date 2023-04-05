@@ -94,3 +94,16 @@ footer {
         left: 50%;
     }
 }
+
+.darkButton {
+    background-color: #0f0070;
+}
+
+.changeSidebarTheme {
+    background-color: gray;
+}
+
+.changeBodyTheme {
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
