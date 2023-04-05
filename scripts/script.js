@@ -19,3 +19,10 @@ cancelButton.addEventListener("click", function() {
     textArea.style.display = "none";
     cancelsave.style.display = "none";
 })
+
+const newnotebtn = document.querySelector(".newnotebtn")
+newnotebtn.addEventListener("click", function() {
+    textArea.style.display = "initial";
+    cancelsave.style.display = "initial";
+    textArea.value = "";
+})
