@@ -27,7 +27,7 @@ newnotebtn.addEventListener("click", function() {
     textArea.value = "";
 })
 
-const notesArray = [{title:"note one", body:"this is my first note"}]
+const notesArray = [{title:"note one", body:"this is my first note"}, {title:"note two", body:"this is my second note"}]
 
 const saveButton = document.querySelector(".saveButton")
 const sidebarLists = document.querySelector(".sidebarLists")
@@ -42,3 +42,17 @@ saveButton.addEventListener("click", function() {
     sidebarLists.appendChild(newli);
 })
 
+sidebarLists.addEventListener("click", function(event) {
+    if (event.target.tagName === "LI") {
+        const listTitle = event.target.textContent;
+
+        for (let item in notesArray) {
+            const notes = notesArray[item];
+
+            if (listTitle === notes.title) {
+                console.log(notes.body);
+                textArea.value = notes.body
+            }
+        }
+    }
+})
