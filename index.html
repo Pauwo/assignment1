@@ -12,12 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <script src="scripts/script.js" defer></script>
   </head>
   <body>
     <main>
       <div class="sidebar">
         <h1>My Notes</h1>
-        <ul>
+        <ul class="sidebarLists">
           <li class="mynoteslist">note one</li>
           <li class="mynoteslist">note two</li>
         </ul>
@@ -32,16 +33,16 @@
         </div>
         <div>
           <ul class="newnote">
-            <li><button class="greenbuttons">New Note</button></li>
+            <li><button class="greenbuttons newnotebtn">New Note</button></li>
             <li><button class="violetbutton">Dark Theme</button></li>
           </ul>
         </div>
         <div class="textcontainer">
             <textarea name="textarea" rows="7" class="textplace" placeholder="This is a placeholder"></textarea>
         </div>
-        <div>
+        <div class="cancelsave">
           <ul class="rightalign">
-            <li><button class="greenbuttons">Save</button></li>
+            <li><button class="greenbuttons saveButton">Save</button></li>
             <li><button class="redbutton">Cancel</button></li>
           </ul>
         </div>
